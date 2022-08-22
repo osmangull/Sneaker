@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#16BEF3</color>
+    <color name="colorAccentTransparent">#d6f4fd</color>
+    <color name="colorAccentArrow">#818996</color>
+    <color name="kotaProgressColor">#E2F4FA</color>
+    <color name="transparentButtonBackground">#9E16BEF3</color>
+    <color name="switchButtonBackgroundColor">#16BEF3</color>
+    <color name="background">#ffffff</color>
+    <color name="headerLineColor">#EDEEF2</color>
+    <color name="roundedLineColor">#D6D7DD</color>
+    <color name="secondaryTextColor">#818996</color>
+    <color name="darkBlueBackgroundColor">#0F3250</color>
+    <color name="black">#000</color>
+    <color name="white">#fff</color>
+</resources>

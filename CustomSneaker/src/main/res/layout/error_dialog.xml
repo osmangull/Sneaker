@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    android:layout_marginTop="75dp"
+    app:cardCornerRadius="10dp"
+    app:cardBackgroundColor="#FF4B46"
+    android:id="@+id/container">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:minHeight="150dp"
+       android:layout_height="wrap_content">
+
+
+
+      <ImageView
+          android:id="@+id/icon"
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:layout_marginStart="24dp"
+          android:layout_marginTop="24dp"
+          android:src="@drawable/danger_icon"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <TextView
+          android:id="@+id/title"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="16dp"
+          android:layout_marginTop="5dp"
+          android:fontFamily="@font/proxima_nova_bold"
+          android:lineSpacingExtra="2dp"
+          tools:text="Hata"
+          android:textColor="#fff"
+          android:textSize="16sp"
+          app:layout_constraintStart_toEndOf="@+id/icon"
+          app:layout_constraintTop_toTopOf="@+id/icon" />
+
+      <TextView
+          android:id="@+id/content"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="16dp"
+          android:layout_marginTop="8dp"
+          android:fontFamily="@font/proxima_nova"
+          android:lineSpacingExtra="2dp"
+          android:textColor="#fff"
+          android:textSize="16sp"
+          android:ellipsize="end"
+          android:maxLines="7"
+          app:layout_constraintEnd_toStartOf="@+id/cancel"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toEndOf="@+id/icon"
+          app:layout_constraintTop_toBottomOf="@+id/title"
+          tools:text="Bir hata oluştu." />
+
+      <TextView
+          android:id="@+id/buttonName"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="24dp"
+          android:layout_marginBottom="20dp"
+          android:fontFamily="@font/proxima_nova"
+          android:lineSpacingExtra="2dp"
+          android:textColor="#fff"
+          android:textSize="16sp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintStart_toStartOf="@+id/content"
+          app:layout_constraintTop_toBottomOf="@+id/content"
+          tools:text="Tamam" />
+
+      <ImageView
+          android:id="@+id/buttonIcon"
+          android:layout_width="22dp"
+          android:layout_height="22dp"
+          android:layout_marginEnd="24dp"
+          android:rotation="180"
+          android:src="@drawable/white_back_icon"
+          app:layout_constraintBottom_toBottomOf="@+id/buttonName"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toTopOf="@+id/buttonName" />
+
+      <ImageView
+          android:id="@+id/cancel"
+          android:layout_width="22dp"
+          android:layout_height="22dp"
+          android:layout_marginTop="16dp"
+          android:layout_marginEnd="16dp"
+          android:src="@drawable/cancel_gray"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
